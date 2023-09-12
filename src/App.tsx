@@ -1,6 +1,6 @@
 import './App.css';
 
-import GolGrid from "./components/GolGrid";
+import GolGrid from './components/GolGrid';
 
 function App() {
   return (

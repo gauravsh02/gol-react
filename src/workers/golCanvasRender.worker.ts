@@ -61,7 +61,7 @@ self.onmessage = (e: any) => {
 function initializeCanvas() {
   canvas.width = canvasWidth;
   canvas.height =  canvasHeight;
-  canvasCtx = canvas.getContext("2d");
+  canvasCtx = canvas.getContext('2d');
   canvasCtx.fillStyle = '#444';
 }
 
