@@ -1,0 +1,54 @@
+#root {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.gol-area {
+  flex-grow: 1;
+  overflow: hidden;
+  box-shadow: 0px -2px 100px -40px rgba(255,255,255,0.2), 0px 2px 8px 0px rgba(0,0,0,0.25), 0px 0px 0px 1px rgba(255,255,255,0.1) inset;
+}
+
+.info-separator {
+  border: 1px solid;
+}
+
+/* Modal Changes */
+.confirm {
+  width: 360px;
+  height: 280px;
+  background: #393939;
+  transition: .6s;
+  z-index: 100;
+  position: absolute;
+  top: -280px;
+  left: calc(50% - 180px);
+}
+
+.confirm.show {
+  top: calc(50% - 140px);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm.show + .overlay {
+  display: block;
+}
+
+@media screen and (max-width: 450px) {
+  .confirm {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+}
